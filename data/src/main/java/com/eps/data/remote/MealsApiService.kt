@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface MealsApiService {
     @GET("categories.php")
-    fun getMeals(): CategoryResponse
+    suspend fun getMeals(): CategoryResponse
 }
